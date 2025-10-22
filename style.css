@@ -11,7 +11,7 @@ header {
 .logo {
     height: 200px;
 }
-/* navigation links in header */
+/* navigation div in header */
 .nav {
     display: flex;
     align-items: center;
@@ -19,6 +19,12 @@ header {
     width: auto;
     height: 30px;
 }
+/* css to navigation links */
 .nav a {
-
+    text-decoration: none; 
+    color: black;
+    font-size: large;
+}
+.nav a:hover {
+    color: rgb(180, 176, 176);
 }
