@@ -1,0 +1,12 @@
+/* style to header  */
+header {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #c2bdb3;
+}
+
+.logo {
+    height: 200px;
+}
