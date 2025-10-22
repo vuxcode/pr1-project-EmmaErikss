@@ -1,0 +1,24 @@
+/* style to header  */
+header {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #c2bdb3;
+    align-items: center;
+}
+/* the store's logo */
+.logo {
+    height: 200px;
+}
+/* navigation links in header */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 30px;
+}
+.nav a {
+
+}
