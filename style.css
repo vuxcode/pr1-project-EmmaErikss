@@ -70,10 +70,56 @@ section {
     background: #cdc8be;
     justify-content: center;
 }
-
+/* video  */
+article {
+    margin: 5px;
+}
 video {
     object-fit: cover;
     width: 100%;
     height: 700px;
+}
+/* sale link and information  */
+aside {
+    background: #cdc8be;
+    height: 550px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sale_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 400px;
+    flex-direction: column;
+    background: #354133;
+    border-radius: 40px;
+    border: white, solid, 3px;
+}
+.sale_div a {
+    text-align: center;
+    text-decoration: none;
+}
+.rules {
+    color: #918a8a;
+    font-size: 10px;
+}
+/* animation, change color to the text to get attention */
+.sale {
+    margin: 0;
+    font-size: 85px;
+    animation: colorshift 2s infinite alternate;
+}
+@keyframes colorshift {
+    from {
+        color: red;
+    }
+    to {
+        color: rgb(28, 51, 28);
+    }
 }
 
