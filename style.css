@@ -59,3 +59,16 @@ main img {
     color: white;
     padding: 30px;
 }
+.main_text p{
+    font-size: 20px;
+}
+/* section div css */
+section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: #878278;
+    justify-content: center;
+}
+
+
