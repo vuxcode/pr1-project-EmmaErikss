@@ -96,7 +96,7 @@ aside {
     width: 560px;
     height: 400px;
     flex-direction: column;
-    background: #354133;
+    background: #b1a69a;
     border-radius: 40px;
     border: white, solid, 3px;
 }
@@ -105,7 +105,7 @@ aside {
     text-decoration: none;
 }
 .rules {
-    color: #918a8a;
+    color: #4d4b4b;
     font-size: 10px;
 }
 /* animation, change color to the text to get attention */
@@ -119,7 +119,33 @@ aside {
         color: red;
     }
     to {
-        color: rgb(28, 51, 28);
+        color: rgb(0, 0, 0);
     }
 }
-
+/* show product categories */
+.cont_prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+/* a link that looks like a button that leads to all products  */
+.cont_prod a {
+    text-decoration: none;
+    border: solid, black, 1px;
+    padding: 5px;
+    color: black;
+}
+/* showing some pictures of some products  */
+.products {
+    display: flex;
+    width: 100%;
+    height: 560px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.products img {
+    width: 370px;
+}
