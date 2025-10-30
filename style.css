@@ -1,6 +1,7 @@
 /* remove the white line (margin) around the body */
-body {
+body, html {
     margin: 0;
+    padding: 0;
 }
 /* style to header  */
 header {
@@ -144,7 +145,6 @@ aside {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap;
 }
 .products img {
     width: 370px;
@@ -210,4 +210,54 @@ aside {
     width: 200px;
     height: 35px;
     border-radius: 15px;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background: #cdc8be;
+}
+/* logo */
+.logo_footer {
+    height: 220px;
+}
+/* big container footer */
+.cont_footer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+/* headings  */
+.headings_footer {
+    display: flex;
+    justify-content: space-around;
+}
+/* small container footer  */
+.cont_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont_2 a {
+    color: rgb(0, 0, 0);
+}
+.cont_2 a:hover {
+    color: rgb(180,176,176)
+}
+/* links in footer  */
+.links_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.links_footer a {
+    text-decoration: none;
+    color: black;
+}
+.links_footer a:hover {
+    color: rgb(180, 176, 176);
 }
