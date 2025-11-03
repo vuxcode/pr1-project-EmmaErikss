@@ -1,26 +1,83 @@
-/* information about the company and the products  */
+/* added border line to nav to create space  */
+.nav {
+    border-bottom: #cdc8be solid 1px;
+}
+
+/* all content  */
 .aboutus {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 60px;
 }
-/* container with all small divs */
-.cont_aboutus {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+
+/* heading for the page */
+.heading_aboutus {
+    font-size: 25px;
+    background: #414941;
+    padding: 10px;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
 }
-/* images  */
-.aboutus img {
+
+/* container with all small divs */
+.cont_about {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+/* image  */
+.info_1 img {
     width: 400px;
-    height: auto;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 50%;
 }
 /* small divs with img and text  */
-.info_1, .info_2, .info_3, .info_4 {
+.info_1 {
     display: flex;
+    align-items: center;
+    height: 630px;
+    width: 70%;
+    gap: 100px;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 /* only text  */
 .about_text {
     text-align: center;
+    width: 100%;
+    height: 300px;
+    border: solid 2px grey;
+    border-radius: 35px;
+}
+.about_text p {
+    font-size: 17px;
+}
+.about_text01 {
+    padding: 20px;
+    border: grey solid 2px;
+}
+.about_text01 p {
+    font-size: 20px;
+    text-align: center;
+}
+.about_text01 h4 {
+    text-align: center;
+    font-size: 25px;
+}
+.info h4 {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin: 0;
+    padding: 15px;
+    background: #414941;
 }
