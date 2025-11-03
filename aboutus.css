@@ -1,0 +1,26 @@
+/* information about the company and the products  */
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+}
+/* container with all small divs */
+.cont_aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+/* images  */
+.aboutus img {
+    width: 400px;
+    height: auto;
+}
+/* small divs with img and text  */
+.info_1, .info_2, .info_3, .info_4 {
+    display: flex;
+}
+/* only text  */
+.about_text {
+    text-align: center;
+}
