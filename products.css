@@ -1,0 +1,26 @@
+.main_cont {
+
+}
+.filter {
+
+}
+/* a container with 3 pictures  */
+.prod_cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* a div for one image and it's text content  */
+.prod_div {
+    text-align: center;
+}
+/* image and hover animation  */
+.prod_div img {
+    width: 300px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.1);
+}
