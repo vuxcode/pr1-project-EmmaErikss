@@ -4,7 +4,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="products.css">
-    <script src="script.js"> </script>
+    <script src="products.js" defer></script>
 </head>
 <body>
     <!-- top header -->
@@ -28,18 +28,20 @@
     </navigation>
     <!-- a div for all content  -->
     <div class="main_cont">
-        <button class="filter_button">Category</button>
-        <!-- div for a filter section  -->
-        <div class="filter">
-            <!-- chairs -->
-            <input id="chairs" type="checkbox">
-            <label for="chairs">Chairs</label>
-            <!-- sofas -->
-            <input id="sofas" type="checkbox">
-            <label for="sofas">Sofas</label>
-            <!-- decorations -->
-            <input id="decorations" type="checkbox">
-            <label for="decorations">Decorations</label>
+        <div class="filter_div">
+            <button class="filter_button" type="button">Category</button>
+            <!-- div for a filter section  -->
+            <div class="filter">
+                <!-- chairs -->
+                <input id="chairs" type="checkbox">
+                <label for="chairs">Chairs</label>
+                <!-- sofas -->
+                <input id="sofas" type="checkbox">
+                <label for="sofas">Sofas</label>
+                <!-- decorations -->
+                <input id="decorations" type="checkbox">
+                <label for="decorations">Decorations</label>
+            </div>
         </div>
         <!-- product pictures with information and price -->
         <div class="prod_cont">

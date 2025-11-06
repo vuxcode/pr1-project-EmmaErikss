@@ -1,11 +1,9 @@
+/* adding space between the nav and the main div */
 .nav {
     border-bottom: solid #cdc8be 1px;
 }
-.main_cont {
-
-}
 .filter {
-
+    display: none;
 }
 /* a container with 3 pictures  */
 .prod_cont {
@@ -27,3 +25,4 @@
 img:hover {
     transform: scale(1.1);
 }
+
