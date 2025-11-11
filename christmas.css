@@ -15,7 +15,23 @@ header {
     width: 100%;
     background: #251518;
     grid-template-rows: 1fr 3fr;
+    position: relative;
+    overflow: hidden;
 }
+/* snowflakes */
+.flake {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: -10px;
+    animation: snow 5s linear infinite;
+}
+
+@keyframes snow {
+    to { transform: translateY(160px)}
+}
+
+/* wishing Merry christmas to the user  */
 .greet {
     text-align: center;
     color: white;
@@ -25,11 +41,15 @@ header {
     font-size: 50px;
     margin: 0;
 }
+
+/* giving the user a possibility to go back to homepage  */
 .back {
     text-decoration: none;
     color: #ffffff66;
     margin: 10px;
 }
+
+/* counter until christmas  */
 .counter {
     text-align: center;
     color: #ffffff87;
