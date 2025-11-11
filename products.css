@@ -2,16 +2,49 @@
 .nav {
     border-bottom: solid #cdc8be 1px;
 }
+
+/* main  */
+.main_cont {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-template-rows: 5% 1fr;
+    margin: 30px;
+}
+/* filter */
 .filter {
     display: none;
+    width: 83px;
+    margin-top: 20px;
 }
-/* a container with 3 pictures  */
-.prod_cont {
+
+.filter_div {
+    height: 500px;
+    grid-row: 2;
+}
+
+.filter_button {
+    padding: 5px;
+    width: 90px;
+}
+.sort {
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    justify-content: end;
+    margin: 20px;
+}
+.sort_button {
+
+}
+
+/* a container with product pictures, spliting them to 3 pictures for every row */
+.prod_cont {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
+    width: 100%;
 }
 /* a div for one image and it's text content  */
 .prod_div {
