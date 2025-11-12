@@ -17,15 +17,19 @@
     </header>
     <!-- main -->
     <main>
+        <!-- where the items should be dropped  -->
         <div class="dropzone">
+            <!-- christmas tree  -->
             <img src="tree.png" class="tree" id="drop-target" draggable="false">
         </div>
+        <!-- explanation text for the user  -->
         <div class="main_text">
             <h3> Use the decorations </h3>
             <p> ⮕ </p>
             <h3> To dress the tree </h3>
             <p> ⬅ </p>
         </div>
+        <!-- decorations for the christmas tree  -->
         <div class="dropzone">
             <img src="red.png" class="decoration" id="red" draggable="true">
             <img src="blue.png" class="decoration" id="blue" draggable="true">
@@ -33,5 +37,21 @@
             <img src="star.png" class="decoration" id="star" draggable="true">
         </div>
     </main>
+    <!-- section  -->
+    <section>
+        <div class="riddle_cont">
+            <div class="riddle_text">
+                <h4>Christmas riddle</h4>
+                <p>I come with many colors, so beautiful and bright<br>
+                , i turn many houses into a magical sight.<br>
+                What am i?</p>
+            </div>
+            <fieldset>
+                 <legend>Answer</legend>
+                 <input type="text">
+                 <button class="riddle_submit">Submit</button>
+            </fieldset>
+        </div>
+    </section>
 </body>
 </html>

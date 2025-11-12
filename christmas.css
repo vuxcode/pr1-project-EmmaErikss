@@ -5,6 +5,7 @@ body, html {
 }
 
 
+
 /* header */
 header {
     height: 150px;
@@ -55,6 +56,9 @@ header {
     color: #ffffff87;
 }
 
+
+
+
 /* main */
 main {
     display: grid;
@@ -65,35 +69,36 @@ main {
     place-items: center;
     text-align: center;
 }
-
+/* div for the christmas tree where the decorations should be dropped */
 .dropzone {
     display: flex; 
     flex-direction: column;
 }
-
+/* christmas tree */
 .tree {
     width: 500px;
     position: relative;
     
 }
-
+/* decorations for the christmas tree  */
 .decorations {
     position: absolute;
 
 }
-
+/* text that explains for the user what to do with the tree & decorations  */
 .main_text h3 {
     color: #d7d3c9bd;
     font-size: 30px;
     font-family: math;
 }
-
+/* arrows in the description text  */
 .main_text p {
     animation: pulse 4s infinite;
     font-size: 40px;
     color: #87702d;
 }
 
+/* animation for the arrows  */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -105,7 +110,41 @@ main {
         transform: scale(1);
     }
 }
-
+/* style for decorations  */
 #red, #blue, #orange, #star {
     width: 70px;
+}
+
+
+
+/* section  */
+section {
+    height: 400px;
+    width: 100%;
+    background: #251518;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.riddle_cont {
+    height: 300px;
+    width: 600px;
+    border-radius: 50px;
+    text-align: center;
+    background: #afa2a273;
+}
+.riddle_text {
+
+}
+fieldset {
+
+}
+legend {
+
+}
+fieldset input {
+
+}
+.riddle_submit {
+
 }
