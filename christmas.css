@@ -21,7 +21,7 @@ header {
 /* snowflakes */
 .flake {
     position: absolute;
-    color: white;
+    color: #453b19;
     font-size: 30px;
     top: -10px;
     animation: snow 5s linear infinite;
@@ -53,4 +53,59 @@ header {
 .counter {
     text-align: center;
     color: #ffffff87;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    height: 753px;
+    background: #213325;
+    border-top: solid #453b19;
+    place-items: center;
+    text-align: center;
+}
+
+.dropzone {
+    display: flex; 
+    flex-direction: column;
+}
+
+.tree {
+    width: 500px;
+    position: relative;
+    
+}
+
+.decorations {
+    position: absolute;
+
+}
+
+.main_text h3 {
+    color: #d7d3c9bd;
+    font-size: 30px;
+    font-family: math;
+}
+
+.main_text p {
+    animation: pulse 4s infinite;
+    font-size: 40px;
+    color: #87702d;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#red, #blue, #orange, #star {
+    width: 70px;
 }

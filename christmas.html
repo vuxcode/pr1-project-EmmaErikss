@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Merry christmas</title>
     <link rel="stylesheet" href="christmas.css">
-    <script src="christmas.js"></script>
+    <script src="christmas.js" defer></script>
     <!-- google font  -->
     <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +17,21 @@
     </header>
     <!-- main -->
     <main>
-       
+        <div class="dropzone">
+            <img src="tree.png" class="tree" id="drop-target" draggable="false">
+        </div>
+        <div class="main_text">
+            <h3> Use the decorations </h3>
+            <p> ⮕ </p>
+            <h3> To dress the tree </h3>
+            <p> ⬅ </p>
+        </div>
+        <div class="dropzone">
+            <img src="red.png" class="decoration" id="red" draggable="true">
+            <img src="blue.png" class="decoration" id="blue" draggable="true">
+            <img src="orange.png" class="decoration" id="orange" draggable="true">
+            <img src="star.png" class="decoration" id="star" draggable="true">
+        </div>
     </main>
 </body>
 </html>
