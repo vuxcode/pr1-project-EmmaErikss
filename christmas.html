@@ -42,15 +42,16 @@
         <div class="riddle_cont">
             <div class="riddle_text">
                 <h4>Christmas riddle</h4>
-                <p>I come with many colors, so beautiful and bright<br>
-                , i turn many houses into a magical sight.<br>
+                <p>I come with many colors, so beautiful and bright,<br>
+                i turn many houses into a magical sight.<br>
                 What am i?</p>
             </div>
-            <fieldset>
-                 <legend>Answer</legend>
-                 <input type="text">
-                 <button class="riddle_submit">Submit</button>
-            </fieldset>
+            <div clasS="riddle_input">
+                <input type="text" placeholder="Answer..." id="riddle_answer">
+            </div>
+            <div>
+                <button onclick="check_answer()" class="riddle_submit">Submit</button>
+            </div>
         </div>
     </section>
 </body>

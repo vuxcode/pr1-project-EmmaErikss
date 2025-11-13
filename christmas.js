@@ -56,3 +56,37 @@ target.addEventListener("dragover", function(event) {
 target.addEventListener("drop", function(event) {
   target.prepend(draggable)
 })
+
+
+
+// christmas riddle 
+
+function check_answer() {
+  
+  // get the user input 
+  var input = document.getElementById("riddle_answer").value;
+  var inputElement = document.getElementById("riddle_answer");
+  input = input.trim().toLowerCase();
+  console.log(input);
+
+  if (input === "christmas lights") {
+    console.log("Correct answer!")
+    inputElement.style.backgroundColor = "green";
+    inputElement.value = "CORRECT!";
+  }
+  else if (input === "lights") {
+    console.log("Correct answer!")
+    inputElement.style.backgroundColor = "green";
+    inputElement.value = "CORRECT!";
+  }
+  else if (input === "fairy lights") {
+    console.log("Correct answer!")
+    inputElement.style.backgroundColor = "green";
+    inputElement.value = "CORRECT!";
+  }
+  else {
+    console.log("Wrong answer!")
+    inputElement.style.backgroundColor = "red";
+    inputElement.value = "WRONG!";
+  }
+}

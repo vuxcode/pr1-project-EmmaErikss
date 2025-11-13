@@ -125,26 +125,34 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid #453b19;
 }
 .riddle_cont {
     height: 300px;
     width: 600px;
     border-radius: 50px;
     text-align: center;
-    background: #afa2a273;
+    background: #12271deb;
+    border: solid #a1956c;
 }
-.riddle_text {
 
+.riddle_text h4 {
+    font-size: 25px;
+    color: #e1d9d9d1;
 }
-fieldset {
-
+.riddle_text p {
+    font-size: 20px;
+    color: #e1d9d9d1;
 }
-legend {
 
-}
-fieldset input {
-
+.riddle_input input {
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
 }
 .riddle_submit {
-
+    height: 30px;
+    width: 180px;
+    margin-top: 15px;
+    border-radius: 5px;
 }
