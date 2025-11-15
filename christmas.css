@@ -127,6 +127,7 @@ section {
     justify-content: center;
     border: solid #453b19;
 }
+/* container with all content in section  */
 .riddle_cont {
     height: 300px;
     width: 600px;
@@ -135,24 +136,51 @@ section {
     background: #12271deb;
     border: solid #a1956c;
 }
-
+/* heading  */
 .riddle_text h4 {
     font-size: 25px;
     color: #e1d9d9d1;
 }
+/* text  */
 .riddle_text p {
     font-size: 20px;
     color: #e1d9d9d1;
 }
-
+/* input design, where the user enters their answer  */
 .riddle_input input {
     height: 30px;
     text-align: center;
     border-radius: 5px;
 }
+/* submit answer button  */
 .riddle_submit {
     height: 30px;
     width: 180px;
     margin-top: 15px;
     border-radius: 5px;
+}
+ 
+
+
+/* christmas calendar  */
+
+article {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 250px;
+}
+
+.calendar a {
+    text-decoration: none;
 }
