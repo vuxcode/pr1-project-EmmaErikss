@@ -1,9 +1,11 @@
+/* background for fullpage  */
 body {
     display: flex;
     justify-content: center;
     background: #260606;
 }
 
+/* background for main content (calendar) */
 main {
     display: grid;
     gap: 25px;
@@ -11,6 +13,7 @@ main {
     grid-template-rows: repeat(6, 200px);
 }
 
+/* background images for each hatch */
 .box img {
     width: 200px;
     height: 200px;
@@ -19,6 +22,7 @@ main {
     border-radius: 10px;
 }
 
+/* container with all content for every hatch */
 .box {
     position: relative;
     display: flex;
@@ -27,6 +31,13 @@ main {
     cursor: pointer;
 }
 
+/* links in gift texts  */
+.box a {
+    text-decoration: none;
+    color: #cd657d;
+}
+
+/* style for numbers/dates */
 .date {
     position: absolute;
     font-size: 60px;
@@ -35,9 +46,9 @@ main {
     width: 40%;
     text-align: center;
     border-radius: 10px;
-    cursor: pointer;
 }
 
+/* style for hidden content (gift texts) */
 .box .gift {
     display: none;
     position: absolute;
@@ -45,4 +56,6 @@ main {
     text-align: center;
     background: #000000bf;
     color: #ffffff;
+    width: 100%;
+    height: auto;
 }
