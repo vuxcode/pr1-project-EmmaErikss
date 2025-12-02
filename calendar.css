@@ -16,6 +16,7 @@ main {
     height: 200px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 
 .box {
@@ -23,9 +24,25 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.box p {
+.date {
     position: absolute;
+    font-size: 60px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
+.box .gift {
+    display: none;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    background: #000000bf;
+    color: #ffffff;
+}
