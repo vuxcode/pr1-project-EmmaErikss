@@ -1,16 +1,35 @@
+.back {
+    text-decoration: none;
+    color: rgb(197, 192, 192);
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    border-bottom: solid #462121 2px;
+    justify-content: center
+}
+h1 {
+    color: #c1c2c1;
+}
+
+
 /* background for fullpage  */
 body {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     background: #260606;
 }
 
 /* background for main content (calendar) */
 main {
+    margin-top: 60px;
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(6, 200px);
+    justify-content: center;
 }
 
 /* background images for each hatch */
@@ -20,6 +39,7 @@ main {
     object-fit: cover;
     display: block;
     border-radius: 10px;
+    box-shadow: 6px 0px 0px rgb(129 82 82 / 35%);
 }
 
 /* container with all content for every hatch */
@@ -58,4 +78,23 @@ main {
     color: #ffffff;
     width: 100%;
     height: auto;
+}
+
+
+
+/* bottom  */
+footer {
+    width: 100%;
+    border-top: solid #462121 2px;
+    margin-top: 100px;
+    height: 400px;
+    overflow: hidden;
+}
+
+footer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
