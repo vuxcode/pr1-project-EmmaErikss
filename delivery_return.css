@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: 910px;
     padding: 50px 0;
     align-items: center;
 /* create a div inside the main to make it smaller  */
@@ -17,12 +17,17 @@
     width: 400px;
     border: solid 2px grey;
     padding: 50px;
+    font-family: system-ui;
 }
 /* add correct size to the gif  */
 .info_heading img {
     width: 150px;
 }
+
+h4 {
+    font-size: 20px;
+}
 /* style to the text  */
 .information p {
-    font-size: 15px;
+    font-size: 18px;
 }

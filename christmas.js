@@ -65,28 +65,69 @@ function check_answer() {
   
   // get the user input 
   var input = document.getElementById("riddle_answer").value;
+  // save the riddle_answer div as a different var without value 
   var inputElement = document.getElementById("riddle_answer");
+  // if the user accidentally types a space or upper/lower case letters
   input = input.trim().toLowerCase();
+  // show the user's input in console 
   console.log(input);
 
+  // if user's input is christmas lights 
   if (input === "christmas lights") {
+    // show result in console 
     console.log("Correct answer!")
+    // change background color and show result to the user 
     inputElement.style.backgroundColor = "green";
     inputElement.value = "CORRECT!";
   }
+  // if user's input is lights 
   else if (input === "lights") {
+    // show result in console 
     console.log("Correct answer!")
+    // change background color and show result to the user 
     inputElement.style.backgroundColor = "green";
     inputElement.value = "CORRECT!";
   }
+  // if user's input is fairy lights 
   else if (input === "fairy lights") {
+    // show result in console 
     console.log("Correct answer!")
+    // change background color and show result to the user 
     inputElement.style.backgroundColor = "green";
     inputElement.value = "CORRECT!";
   }
+  // if user types anything else 
   else {
+    // show result in console 
     console.log("Wrong answer!")
+    // show the result to the user 
     inputElement.style.backgroundColor = "red";
     inputElement.value = "WRONG!";
   }
+}
+
+// christmas quiz 
+
+var question1 = "What color is Santa Claus's suit?";
+var question2 = "What do people usually put on top of a christmas tree?";
+var question3 = "What is the name of the reindeer with a red nose?";
+var question4 = "In which month is Christmas celebrated?";
+var question5 = "What do people often hang by the fireplace for Santa to fill with gifts?";
+
+var all_questions = [question1, question2, question3, question4, question5];
+
+var choices1 = ("Green and gold", "Red and white", "Blue and silver");
+var choices2 = ("A star", "A candy cane", "A snow globe");
+var choices3 = ("Dasher", "Rudolph", "Blitzen");
+var choices4 = ("November", "December", "January");
+var choices5 = ("Mittens", "Stockings", "Scarves");
+
+var all_choices = [choices1, choices2, choices3, choices4, choices5];
+
+var i = 0;
+var question = document.querySelector(".aside-quiz");
+var choice = document.querySelector(".aside-answer");
+
+function start() {
+  
 }

@@ -22,9 +22,18 @@
     grid-row: 2;
 }
 
+.choice {
+    display: flex;
+    gap: 5px;
+}
+
 .filter_button {
     padding: 5px;
     width: 90px;
+    background: #afaa9f;
+    font-family: system-ui;
+    font-size: 15px;
+    border-radius: 10px;
 }
 .sort {
     grid-column: 2;
@@ -34,7 +43,10 @@
     margin: 20px;
 }
 .sort_button {
-
+    background: #afaa9f;
+    width: 55px;
+    border-radius: 5px;
+    height: 25px;
 }
 
 /* a container with product pictures, spliting them to 3 pictures for every row */
@@ -43,7 +55,6 @@
     grid-column: 2;
     grid-row: 2;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     width: 100%;
 }
 /* a div for one image and it's text content  */
@@ -54,7 +65,17 @@
 .prod_div img {
     width: 300px;
     transition: transform 0.3s;
+    border: solid 1px grey;
 }
+
+.prod_div p {
+    font-family: system-ui;
+}
+
+.add_button {
+    font-family: system-ui;
+}
+
 img:hover {
     transform: scale(1.1);
 }

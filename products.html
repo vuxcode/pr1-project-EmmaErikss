@@ -15,8 +15,8 @@
         </div>
         <div>
             <!-- header buttons -->
-            <button>Login</button>
-            <button>Cart</button>
+            <button class="login_button"><img src="login.png"></button>
+            <button class="cart_button"><img src="cart.png"></button>
         </div>
     </header>
     <navigation class="nav">
@@ -36,23 +36,35 @@
             <!-- div for a filter section  -->
             <div class="filter">
                 <!-- chairs -->
-                <input id="chairs" type="checkbox">
-                <label for="chairs">Chairs</label>
-                <!-- sofas -->
-                <input id="sofas" type="checkbox">
-                <label for="sofas">Sofas</label>
-                <!-- decorations -->
-                <input id="decorations" type="checkbox">
-                <label for="decorations">Decor</label>
-                <!-- Wood -->
-                <input id="wood" type="checkbox">
-                <label for="wood">Wood</label>
-                <!-- sofas -->
-                <input id="textile" type="checkbox">
-                <label for="textile">Textile</label>
-                <!-- decorations -->
-                <input id="porcelain" type="checkbox">
-                <label for="porcelain">Porcelain</label>
+                <div class="choice">
+                    <input id="chairs" type="checkbox">
+                    <label for="chairs">Chairs</label>
+                </div>
+                    <!-- sofas -->
+                <div class="choice">
+                    <input id="sofas" type="checkbox">
+                    <label for="sofas">Sofas</label>
+                </div>
+                    <!-- decorations -->
+                <div class="choice">
+                    <input id="decorations" type="checkbox">
+                    <label for="decorations">Decor</label>
+                </div>
+                    <!-- Wood -->
+                <div class="choice">
+                    <input id="wood" type="checkbox">
+                    <label for="wood">Wood</label>
+                </div>
+                    <!-- sofas -->
+                <div class="choice">
+                    <input id="textile" type="checkbox">
+                    <label for="textile">Textile</label>
+                </div>
+                    <!-- decorations -->
+                <div class="choice">
+                    <input id="porcelain" type="checkbox">
+                    <label for="porcelain">Porcelain</label>
+                </div>
             </div>
         </div>
         <!-- sort button -->
@@ -64,42 +76,87 @@
         <!-- product pictures with information and price -->
         <div class="prod_cont">
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
-                <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <img src="prod4.jpg">
+                <p> Wodden chair </p>
+                <p> 899kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
-                <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <img src="prod2.jpg">
+                <p> Bamboo chair </p>
+                <p> 749kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
+                <img src="prod7.jpg">
+                <p> Lamp </p>
                 <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
-                <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <img src="prod4.jpg">
+                <p> Wodden chair </p>
+                <p> 899kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
-                <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <img src="prod5.jpg">
+                <p> Mirror </p>
+                <p> 599kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
             <div class="prod_div">
-                <img src="flower01.jpg">
-                <p> text </p>
+                <img src="prod2.jpg">
+                <p> Bamboo chair </p>
+                <p> 749kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
+            </div>
+            <div class="prod_div">
+                <img src="prod7.jpg">
+                <p> Lamp </p>
                 <p> 399kr </p>
-                <p> <button> Add to cart </button></p>
+                <p> <button class="add_button"> Add to cart </button></p>
+            </div>
+            <div class="prod_div">
+                <img src="prod5.jpg">
+                <p> Mirror </p>
+                <p> 599kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
+            </div>
+            <div class="prod_div">
+                <img src="prod4.jpg">
+                <p> Wodden chair </p>
+                <p> 899kr </p>
+                <p> <button class="add_button"> Add to cart </button></p>
             </div>
         </div>
     </div>
+         <!-- footer  -->
+     <footer>
+        <!-- logo  -->
+        <img src="logo1.png" class="logo_footer">
+        <div class="cont_footer">
+            <!-- headings in footer -->
+            <div class="headings_footer">
+                <h5> Nord Haven </h5>
+                <h5> Links </h5>
+            </div>
+            <div class="cont_2">
+                <!-- contact information -->
+                    <div class="contact">
+                    <p> Elm Street 12 </p>
+                    <p> Stockholm 112 45 </p>
+                    <p> Sweden </p>
+                    <a href="mailto:contact@nordhaven.com">contact@nordhaven.com</a>
+                </div>
+                <!-- links with important information to the user  -->
+                <div class="links_footer">
+                    <a href="file:///C:/Users/emmaa/OneDrive/Skrivbord/pr1-project-EmmaErikss-main/pr1-project-EmmaErikss-main/aboutus.html">About us</a>
+                    <a href="file:///C:/Users/emmaa/OneDrive/Skrivbord/pr1-project-EmmaErikss-main/pr1-project-EmmaErikss-main/delivery_return.html">Delivery & return policy</a>
+                    <a href="file:///C:/Users/emmaa/OneDrive/Skrivbord/pr1-project-EmmaErikss-main/pr1-project-EmmaErikss-main/privacy.html">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+     </footer>
 </body>
 </html>

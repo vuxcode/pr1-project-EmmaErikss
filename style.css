@@ -9,9 +9,26 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: #cdc8be;
+    background: #978f80;
     align-items: center;
 }
+
+/* buttons header  */
+.login_button, .cart_button {
+    font-family: system-ui;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+}
+
+.login_button img, .cart_button img {
+    background: white;
+    height: 25px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
 /* the store's logo */
 .logo {
     height: 200px;
@@ -29,6 +46,7 @@ header {
     text-decoration: none; 
     color: black;
     font-size: large;
+    font-family: system-ui;
 }
 .nav a:hover {
     color: rgb(180, 176, 176);
@@ -49,6 +67,7 @@ main img {
     height: 800px;
     width: 100%;
     max-width: 1920px;
+    border-bottom: solid 2px #655f58;
 }
 /* adjusting the text for the main to be on top the img  */
 .main_text {
@@ -56,33 +75,56 @@ main img {
     position: absolute;
     align-items: center;
     flex-direction: column;
-    background: rgba(00, 00, 00, 0.5);
-    color: white;
+    background: rgba(151, 143, 128, 0.5);
+    color: rgb(43, 42, 42);
     padding: 30px;
 }
 .main_text p{
     font-size: 20px;
+    text-align: center;
+    font-family: system-ui;
+}
+
+.main_text h1 {
+    font-family: system-ui;
+    margin: 0;
+}
+
+.main_button {
+    font-size: 20px;
+    font-family: system-ui;
+    background: #fff6f0;
+    color: black;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 8px;
+    border: 1px solid #655f58;
+    text-decoration: none;
 }
 /* section div css */
 section {
     display: flex;
     width: 100%;
     height: 400px;
-    background: #cdc8be;
+    background: #978f80;
     justify-content: center;
 }
 /* video  */
 article {
-    margin: 5px;
+    margin: 0;
+    padding: 0;
 }
 video {
     object-fit: cover;
     width: 100%;
     height: 700px;
+    margin: 0;
+    padding: 0;
+    border-top: solid #61554d 2px;
 }
 /* sale link and information  */
 aside {
-    background: #cdc8be;
+    background: #978f80;
     height: 550px;
     width: 100%;
     margin: 0;
@@ -188,7 +230,7 @@ aside {
     height: 350px;
     border: solid 1px black;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.4);
-    background: #cdc8be;
+    background: #978f80;
 }
 /* text in div  */
 .socials p {
@@ -219,7 +261,7 @@ footer {
     width: 100%;
     height: 400px;
     margin-top: 20px;
-    background: #cdc8be;
+    background: #978f80;
 }
 /* logo */
 .logo_footer {
@@ -235,6 +277,7 @@ footer {
 .headings_footer {
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
 }
 /* small container footer  */
 .cont_2 {
