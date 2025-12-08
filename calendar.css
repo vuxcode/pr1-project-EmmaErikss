@@ -79,8 +79,10 @@ main {
     width: 100%;
     height: auto;
 }
-
-
+/* locked hatch style  */
+.box.locked {
+    pointer-events: none;
+}
 
 /* bottom  */
 footer {
