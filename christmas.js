@@ -36,27 +36,53 @@ function snow() {
 setInterval(snow, 600);
 
 
-
-// christmas tree 
-// add what will be the moving object
-var draggable = document.querySelectorAll(".decoration");
-// add the position where the decorations should be dropped 
-var target = document.getElementById("drop-target");
-
-draggable.forEach(function(element) {
-  element.addEventListener("dragstart", function(event) {
-    console.log(event)
-  })
-})
-
-target.addEventListener("dragover", function(event) {
-  event.preventDefault()
-})
-
-target.addEventListener("drop", function(event) {
-  target.prepend(draggable)
-})
-
+function counter() {
+ 
+    // time and date now (startdate)
+    var now = new Date();
+    // date for christmas (enddate) (months starts with index 0)
+    var christmas = new Date(2025, 11, 24, 0, 0);
+    // save difference between the dates
+    var diff = christmas - now;
+ 
+    if (diff < 0) {
+        document.querySelector(".Days").innerText = "0";
+        document.querySelector(".Hours").innerText = "0";
+        document.querySelector(".Minutes").innerText = "0";
+        document.querySelector(".Seconds").innerText = "0";
+        return;
+    }
+   
+    else {
+    // save each counter individually
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+ 
+    // we have calculated the diff in ms and now want to see how many days we can remove from that number
+    var days_diff = Math.floor(diff / days);
+    // update the diff var with the remaining ms
+    diff = diff % days;
+ 
+    var hours_diff = Math.floor(diff / hours);
+    diff = diff % hours;
+ 
+    var minutes_diff = Math.floor(diff / minutes);
+    diff = diff % minutes;
+ 
+    var seconds_diff = Math.floor(diff / seconds);
+ 
+    // connect to divs on html document and show the diffs
+    document.querySelector(".Days").innerText = days_diff;
+    document.querySelector(".Hours").innerText = hours_diff;
+    document.querySelector(".Minutes").innerText = minutes_diff;
+    document.querySelector(".Seconds").innerText = seconds_diff;
+ 
+    setInterval(counter, 1000);
+    }
+}
+counter();
 
 
 // christmas riddle 
@@ -108,26 +134,3 @@ function check_answer() {
 
 // christmas quiz 
 
-var question1 = "What color is Santa Claus's suit?";
-var question2 = "What do people usually put on top of a christmas tree?";
-var question3 = "What is the name of the reindeer with a red nose?";
-var question4 = "In which month is Christmas celebrated?";
-var question5 = "What do people often hang by the fireplace for Santa to fill with gifts?";
-
-var all_questions = [question1, question2, question3, question4, question5];
-
-var choices1 = ("Green and gold", "Red and white", "Blue and silver");
-var choices2 = ("A star", "A candy cane", "A snow globe");
-var choices3 = ("Dasher", "Rudolph", "Blitzen");
-var choices4 = ("November", "December", "January");
-var choices5 = ("Mittens", "Stockings", "Scarves");
-
-var all_choices = [choices1, choices2, choices3, choices4, choices5];
-
-var i = 0;
-var question = document.querySelector(".aside-quiz");
-var choice = document.querySelector(".aside-answer");
-
-function start() {
-  
-}

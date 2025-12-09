@@ -50,8 +50,10 @@ header {
 
 /* counter until christmas  */
 .counter {
+    display: flex;
     text-align: center;
-    color: #ffffff87;
+    color: #200d0d87;
+    justify-content: center;
 }
 
 
