@@ -17,5 +17,18 @@
 2025-10-29 9:00 worked på 1 hour 
   - CTA text 
 
-2025-10-30 10:00 
-  - 
+2025-10-30 10:00 worked for 3 hours. 
+  - about us page
+  - Footer 
+  - Social div 
+
+2025-11-03 16:00 worked for 4 Hours
+-privacy page 
+-Footer for delivery and return page
+-Information for delivery and return page
+-Footer for about us
+
+2025-11-04 worked for 1 hour 
+- product page 
+
+2025-11-06 worked for 
