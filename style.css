@@ -107,7 +107,20 @@ section {
     width: 100%;
     height: 400px;
     background: #978f80;
+    align-items: center;
+    gap: 20px;
     justify-content: center;
+}
+
+.cont_div {
+    border: 2px solid #afa8a8;
+    width: 300px;
+    height: 215px;
+    padding: 20px;
+    gap: 10px;
+    background: #b1a69a;
+    border-radius: 10px;
+    text-align: center;
 }
 /* video  */
 article {
